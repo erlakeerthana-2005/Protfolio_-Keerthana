@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keerthana Erla | Portfolio</title>
+  <link rel="stylesheet" href="portfolio_style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <button id="darkToggle" class="dark-btn"><i class="fa-solid fa-moon"></i></button>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi,I'm<span class="highlight"> Keerthana Erla</span></h1>
+      <p class="tag"> • Student • Data Science Enthusiast</p>
+
+      <div class="social-links">
+
+        <a href="https://www.linkedin.com/in/keerthana-erla" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/erlakeerthana-2005" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://leetcode.com/u/keerthana/" target="_blank">
+          <i class="fas fa-code"></i> LeetCode
+        </a>
+
+        <a href="https://www.hackerrank.com/profile/keerthanaram2501" target="_blank">
+          <i class="fab fa-hackerrank"></i> HackerRank
+        </a>
+
+        <a href="https://www.codechef.com/users/erlakeerthana" target="_blank">
+          <i class="fas fa-utensils"></i> CodeChef
+        </a>
+
+      </div>
+    </div>
+    <a href="Keerthana_Resume.pdf" class="resume-btn" target="_blank">
+<i class="fa-solid fa-file"></i> View Resume
+</a>
+</header>
+
+
+  <section class="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+    <p>
+      I am an ambitious Computer Science Engineering student with strong skills in Python, Java,
+      and web technologies. I enjoy building responsive websites and working on data science
+      projects. Passionate about learning, problem-solving, and creating real-world applications.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skill-tags">
+
+      <span><i class="fab fa-html5"></i> HTML</span>
+      <span><i class="fab fa-css3-alt"></i> CSS</span>
+      <span><i class="fab fa-js"></i> JavaScript</span>
+      <span><i class="fab fa-python"></i> Python</span>
+      <span><i class="fab fa-java"></i> Java</span>
+      <span><i class="fas fa-database"></i> SQL</span>
+      <span><i class="fas fa-file-excel"></i> Excel</span>
+      <span><i class="fas fa-chart-line"></i> Tableau</span>
+
+    </div>
+  </section>
+
+
+  <section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Emails to WhatsApp Alerts</h3>
+      <p>Automated email-to-WhatsApp alert system using Python, Twilio API, and Gmail API.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Tic Tac Toe Game</h3>
+      <p>Interactive command-line game built in Python with simple AI.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Employee Attrition</h3>
+      <p>Analyzing the causes of workforce reduction and developing strategies to improve employee retention.</p>
+    </div>
+
+  </section>
+
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech CSE</strong> — KU College of Engineering & Technology (GPA: 9.3)</li>
+      <li><strong>Intermediate</strong> — Siddaratha Junior College (GPA: 9.54)</li>
+      <li><strong>SSC</strong> — Naagarjuna High School (GPA: 10)</li>
+    </ul>
+  </section>
+
+ 
+  <footer>
+    Contact Information:
+    <a href="mailto:erlakeerthana@gmail.com">erlakeerthana@gmail.com</a>
+    <p>© 2025 Keerthana Erla | Portfolio</p>
+  </footer>
+  <script>
+  const darkToggle = document.getElementById('darkToggle');
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+
+    // Optional: switch the icon
+    const icon = darkToggle.querySelector('i');
+    if(document.body.classList.contains('dark')) {
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+    } else {
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+    }
+  });
+</script>
+
+
+</body>
+</html>
